@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Videobelajar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="/public/Logo.png" alt="videobelajar" class="logo" />
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h1>Pendaftaran Akun</h1>
+        <p class="subtitle">Yuk, daftarkan akunmu sekarang juga!</p>
+
+        <form>
+          <div class="form-group">
+            <label>Nama Lengkap <span>*</span></label>
+            <input type="text" />
+          </div>
+
+          <div class="form-group">
+            <label>E-Mail <span>*</span></label>
+            <input type="email" />
+          </div>
+
+          <div class="form-group">
+            <label>No. Hp <span>*</span></label>
+
+            <div class="phone-wrapper">
+              <select class="phone-code">
+                <option value="+62">🇮🇩 +62</option>
+                <option value="+65">🇸🇬 +65</option>
+                <option value="+60">🇲🇾 +60</option>
+              </select>
+
+              <input type="tel" class="phone-input" />
+            </div>
+          </div>
+
+          <!-- <div class="form-group">
+            <label for="gender">Jenis Kelamin<span>*</span></label>
+            <select name="gender" id="gender" required>
+              <option value="">Pilih</option>
+              <option value="wanita">Wanita</option>
+              <option value="pria">Pria</option>
+            </select>
+          </div> -->
+
+          <div class="form-group">
+            <label>Kata Sandi <span>*</span></label>
+            <div class="password-wrapper">
+              <input type="password" />
+              <span class="toggle">👁️</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Konfirmasi Kata Sandi <span>*</span></label>
+            <div class="password-wrapper">
+              <input type="password" />
+              <span class="toggle">👁️</span>
+            </div>
+          </div>
+
+          <div class="forgot">
+            <a href="#">Lupa Password?</a>
+          </div>
+
+          <button class="btn btn-primary">Daftar</button>
+          <a href="index.html" class="btn btn-secondary">Masuk</a>
+
+          <div class="divider">atau</div>
+
+          <button type="button" class="btn btn-google">
+            <img
+              src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+              alt="Google"
+            />
+            Daftar dengan Google
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

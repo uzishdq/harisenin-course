@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Videobelajar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header header-dashboard">
+      <div class="header-inner">
+        <img src="/public/Logo.png" alt="videobelajar" class="logo" />
+
+        <!-- Desktop avatar -->
+        <div class="avatar-only">
+          <img src="https://i.pravatar.cc/40" alt="User" class="user-avatar" />
+        </div>
+
+        <!-- Mobile hamburger -->
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="hamburger" id="mobileToggle">☰</button>
+
+          <div class="dropdown">
+            <a href="#">Bisnis</a>
+            <a href="#">Pemasaran</a>
+            <a href="#">Desain</a>
+            <a href="#">Teknologi</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-dashboard">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <h1>
+            Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video
+            Interaktif!
+          </h1>
+          <p>
+            Temukan ilmu baru yang menarik dan mendalam melalui koleksi video
+            pembelajaran berkualitas tinggi. Tidak hanya itu, Anda juga dapat
+            berpartisipasi dalam latihan interaktif yang akan meningkatkan
+            pemahaman Anda.
+          </p>
+
+          <a href="#" class="btn btn-primary hero-btn"
+            >Temukan Video Course untuk Dipelajari!</a
+          >
+        </div>
+      </section>
+
+      <!-- COURSES SECTION -->
+      <section class="featured-courses">
+        <div class="container-featured">
+          <div class="section-header">
+            <h2>Koleksi Video Pembelajaran Unggulan</h2>
+            <p>Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
+          </div>
+
+          <!-- Tabs Kategori -->
+          <div class="course-tabs">
+            <button class="tab-btn active" data-category="all">
+              Semua Kelas
+            </button>
+            <button class="tab-btn" data-category="pemasaran">Pemasaran</button>
+            <button class="tab-btn" data-category="desain">Desain</button>
+            <button class="tab-btn" data-category="pengembangan">
+              Pengembangan Diri
+            </button>
+            <button class="tab-btn" data-category="bisnis">Bisnis</button>
+          </div>
+
+          <!-- Grid Kursus -->
+          <div class="courses-grid" id="coursesGrid">
+            <!-- di-render oleh JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION SECTION -->
+      <section class="cta-hero">
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+          <p>NEWSLETTER</p>
+          <h1>Mau Belajar Lebih Banyak?</h1>
+          <p>
+            Daftarkan dirimu untuk mendapatkan informasi terbaru dan penawaran
+            spesial dari program-program terbaik hariesok.id
+          </p>
+          <form id="ctaHeroForm" class="cta-hero-form">
+            <input type="email" required />
+            <button type="submit">Subcribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img src="/public/Logo.png" alt="videobelajar" class="logo" />
+          <p class="brand-desc">
+            Gali Potensi Anda Melalui<br />
+            Pembelajaran Video di hariesok.id!
+          </p>
+          <p class="brand-info">
+            Jl. Usman Effendi No. 50 Lowokwaru, Malang<br />
+            +62-877-7123-1234
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <div class="link-group">
+            <button class="footer-toggle" data-dropdown>
+              <span>Kategori</span>
+              <span class="arrow">▾</span>
+            </button>
+            <ul>
+              <li><a href="#">Digital & Teknologi</a></li>
+              <li><a href="#">Pemasaran</a></li>
+              <li><a href="#">Manajemen Bisnis</a></li>
+              <li><a href="#">Pengembangan Diri</a></li>
+              <li><a href="#">Desain</a></li>
+            </ul>
+          </div>
+
+          <div class="link-group">
+            <button class="footer-toggle" data-dropdown>
+              <span>Perusahaan</span>
+              <span class="arrow">▾</span>
+            </button>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Ketentuan Layanan</a></li>
+              <li><a href="#">Bantuan</a></li>
+            </ul>
+          </div>
+
+          <div class="link-group">
+            <button class="footer-toggle" data-dropdown>
+              <span>Komunitas</span>
+              <span class="arrow">▾</span>
+            </button>
+            <ul>
+              <li><a href="#">Tips Sukses</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>©2023 Gerobak Sayur All Rights Reserved.</p>
+        <div class="socials">
+          <a href="#" class="social-icon">
+            <img
+              src="https://www.svgrepo.com/show/475661/linkedin-color.svg"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="#" class="social-icon">
+            <img
+              src="https://www.svgrepo.com/show/475647/facebook-color.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" class="social-icon">
+            <img
+              src="https://www.svgrepo.com/show/303154/instagram-2016-logo.svg"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#" class="social-icon">
+            <img
+              src="https://www.svgrepo.com/show/475689/twitter-color.svg"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
