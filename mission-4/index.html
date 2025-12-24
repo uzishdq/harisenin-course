@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="profile" onclick="showProfileModal()">
+          <div class="profile-name" id="profileName"></div>
+          <div class="profile-job" id="profileJob"></div>
+        </div>
+        <div class="date" id="date"></div>
+      </header>
+
+      <textarea
+        id="task"
+        placeholder="To Do..."
+        rows="3"
+        autofocus
+        style="resize: vertical; min-height: 80px"
+      ></textarea>
+      <input type="date" id="dueDate" />
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium" selected>Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button class="btn btn-add" onclick="addTask()">Save</button>
+
+      <div class="controls">
+        <label>Filter To Do :</label>
+        <input type="date" id="filterDate" onchange="render()" />
+      </div>
+
+      <div class="list overdue-list">
+        <div class="list-header">Overdue / Late</div>
+        <div id="overdueList"></div>
+      </div>
+
+      <div class="list">
+        <div class="list-header">To Do</div>
+        <div id="todoList"></div>
+      </div>
+
+      <div class="list">
+        <div class="list-header">Done</div>
+        <div id="doneList"></div>
+      </div>
+
+      <button class="btn btn-clear" onclick="showModal('clearAll')">
+        Delete All
+      </button>
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal-overlay" id="confirmModal">
+      <div class="modal">
+        <h3 id="confirmTitle">Confirmation</h3>
+        <p id="confirmMessage">Are you sure?</p>
+        <div class="modal-buttons">
+          <button class="btn-modal btn-cancel" onclick="closeConfirmModal()">
+            Cancel
+          </button>
+          <button class="btn-modal btn-danger" id="confirmActionBtn">
+            Yes, Delete
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Edit Profile -->
+    <div class="modal-overlay" id="profileModal">
+      <div class="modal">
+        <h3>Edit Profil</h3>
+        <label for="editName">Name</label>
+        <input type="text" id="editName" placeholder="Jhon Doe" />
+
+        <label for="editJob">Position</label>
+        <input type="text" id="editJob" placeholder="Product Manager" />
+
+        <div class="modal-buttons">
+          <button class="btn-modal btn-cancel" onclick="closeProfileModal()">
+            Cancel
+          </button>
+          <button class="btn-modal btn-confirm" onclick="saveProfile()">
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
