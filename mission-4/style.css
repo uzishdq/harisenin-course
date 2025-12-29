@@ -36,6 +36,7 @@ header {
 }
 
 .profile {
+  all: unset;
   font-weight: 600;
   cursor: pointer;
   display: flex;
