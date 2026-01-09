@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="course-footer">
             <div class="rating">
-              <span>★★★★☆</span>
+              <span class="star">★★★★☆</span>
               <span>${course.rating} (${course.reviews})</span>
             </div>
             <div class="price">Rp ${course.price}</div>
