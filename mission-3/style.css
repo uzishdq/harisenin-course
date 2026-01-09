@@ -859,6 +859,18 @@ select:focus {
     gap: 12px;
     text-align: center;
   }
+
+  .cta-hero-form button {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffbd3a;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
 }
 
 @media (max-width: 480px) {
